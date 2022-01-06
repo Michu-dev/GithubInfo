@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 @Data
 @AllArgsConstructor
@@ -12,4 +14,5 @@ import java.util.List;
 public class ReposUserStatistics {
     private Repo[] reposList;
     private int allStars;
+    private List<Entry<String, Integer>> languagesList;
 }
