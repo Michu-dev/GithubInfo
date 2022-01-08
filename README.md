@@ -26,6 +26,7 @@ Postman: `http://localhost:8080/nazwa_uzytkownika/`. Mozna przetestować
 aktualną wersję bez uruchamiania aplikacji pod adresem:
 `http://github-info-app-with-languages.herokuapp.com/nazwa_uzytkownika/`.
 Przykład: <br><br>
+http://localhost:8080/Michu-dev/ <br>
 http://github-info-app-with-languages.herokuapp.com/Michu-dev/ <br><br>
 Rekomendacje dla przeglądarek: wtyczka [JSON Formatter](https://github.com/callumlocke/json-formatter)
 
