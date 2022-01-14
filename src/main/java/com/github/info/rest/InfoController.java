@@ -19,8 +19,8 @@ import java.util.stream.Collectors;
 @RequestMapping("/{user}/")
 public class InfoController {
 
-    @Autowired
-    private RestTemplate restTemplate;
+
+    private RestTemplate restTemplate = new RestTemplate();
 
 
     private static final Logger logger = LoggerFactory.getLogger(InfoController.class);
@@ -41,7 +41,7 @@ public class InfoController {
         Map<String, Integer> map = new HashMap<String, Integer>();
 
         for (Repo r : response) {
-            allStargazzers += r.getStargazersCount();
+            allStargazzers += r.getStargazers_count();
             repoLanguagesUrl = "https://api.github.com/repos/" + user + "/" + r.getName() + "/languages";
             Object object = restTemplate.getForObject(repoLanguagesUrl, Object.class);
             logger.info(String.valueOf(object));

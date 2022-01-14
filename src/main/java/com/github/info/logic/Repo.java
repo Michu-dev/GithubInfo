@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Repo {
     private String name;
-    private int stargazersCount;
+    private int stargazers_count;
 }
